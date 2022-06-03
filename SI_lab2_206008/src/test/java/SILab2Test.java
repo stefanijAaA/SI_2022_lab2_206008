@@ -15,7 +15,7 @@ public class SILab2Test {
         IllegalArgumentException ex1 = assertThrows(IllegalArgumentException.class, () -> SILab2.function(List.of("#","0","0")));
         assertTrue(ex1.getMessage().contains("List length should be a perfect square"));
 
-        assertEquals(List.of("1","1","1","#","#","#","#","3","#"), SILab2.function(List.of("0","0","0","#","#","#","#","0","#")));
+        assertEquals(List.of("#","#","#","#","4","#","#","#","2"), SILab2.function(List.of("#","#","#","#","0","#","#","#","0")));
     }
      @Test
     void EveryBranch(){
@@ -26,7 +26,7 @@ public class SILab2Test {
         IllegalArgumentException ex1 = assertThrows(IllegalArgumentException.class, () -> SILab2.function(List.of("#","0","0")));
         assertTrue(ex1.getMessage().contains("List length should be a perfect square"));
 
-        assertEquals(List.of("1","1","1","#","#","#","#","3","#"), SILab2.function(List.of("0","0","0","#","#","#","#","0","#")));
+       assertEquals(List.of("#","#","#","#","4","#","#","#","2"), SILab2.function(List.of("#","#","#","#","0","#","#","#","0")));
     }
 
 
